@@ -72,3 +72,27 @@ button:hover {
 .delete-btn:hover {
     background: #c62828;
 }
+
+.filter {
+    margin-bottom: 16px;
+}
+
+#filter-tasks {
+    margin-left: 8px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#stats {
+    margin-top: 16px;
+    text-align: center;
+    color: #555;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}

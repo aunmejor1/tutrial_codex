@@ -14,7 +14,16 @@
             <input type="text" id="new-task" placeholder="Añade una nueva tarea..." required>
             <button type="submit">Agregar</button>
         </form>
+        <div class="filter">
+            <label for="filter-tasks">Mostrar:</label>
+            <select id="filter-tasks">
+                <option value="all">Todas</option>
+                <option value="active">Pendientes</option>
+                <option value="completed">Completadas</option>
+            </select>
+        </div>
         <ul id="task-list"></ul>
+        <div id="stats"></div>
     </div>
     <script src="app.js"></script>
 </body>
