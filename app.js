@@ -4,7 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
 
     // Cargar tareas guardadas
-    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    let tasks;
+    try {
+        tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    } catch (e) {
+        tasks = [];
+        localStorage.removeItem("tasks");
+    }
 
     function saveTasks() {
         localStorage.setItem('tasks', JSON.stringify(tasks));
